@@ -14,8 +14,9 @@ This will need to be compiled. The directory for the executable was placed in:
 ## Make Commands
 
 Typing in the following commands in the development folder:
-- `make all` will compile the binary to the *./bin/* folder.
-- `make burn` command will flash the device
+- `make blink` will compile the blink program to the *./bin/* folder.
+- `make tim2` will compile the timer2 program to the *./bin/* folder
+- `make burn` command will flash the device depending on the last build
 - `make clean` will clear the binary and the *./bin/* folder
 
 depending on your flash device, the makefile may need to be edited.

@@ -201,4 +201,57 @@ enum CPUDIV {
   CPUDIV_MATER_DEFAULT = 0
 };
 
+/******************************************************************************
+ * Timer 4 Register
+ *****************************************************************************/
+
+#define TIM4_CR1  *(volatile unsigned char*) 0x5340 /* TIM4 control register 1 */
+#define TIM4_IER  *(volatile unsigned char*) 0x5343 /* TIM4 interrupt enable register */
+#define TIM4_SR   *(volatile unsigned char*) 0x5344 /* TIM4 status register */
+#define TIM4_EGR  *(volatile unsigned char*) 0x5345 /* TIM4 event generation register */
+#define TIM4_CNTR *(volatile unsigned char*) 0x5346 /* TIM4 counter */
+#define TIM4_PSCR *(volatile unsigned char*) 0x5347 /* TIM4 prescaler register */
+#define TIM4_ARR  *(volatile unsigned char*) 0x5348 /* TIM4 auto-reload register */
+
+/******************************************************************************
+ * Clock Control Register
+ *****************************************************************************/
+
+#define CLK_ICKR    *(volatile unsigned char*) 0x50C0 /* Internal clock control register */
+#define CLK_ECKR    *(volatile unsigned char*) 0x50C1 /* External clock control register */
+#define CLK_CMSR    *(volatile unsigned char*) 0x50C3 /* Clock master status register */
+#define CLK_SWR     *(volatile unsigned char*) 0x50C4 /* Clock master switch register */
+#define CLK_SWCR    *(volatile unsigned char*) 0x50C5 /* Clock switch control register */
+#define CLK_CKDIVR  *(volatile unsigned char*) 0x50C6 /* lock divider register */
+#define CLK_PCKENR1 *(volatile unsigned char*) 0x50C7 /* Peripheral clock gating register 1 */
+#define CLK_CSSR    *(volatile unsigned char*) 0x50C8 /* Clock security system register */
+#define CLK_CCOR    *(volatile unsigned char*) 0x50C9 /* Configurable clock control register */
+#define CLK_PCKENR2 *(volatile unsigned char*) 0x50CA /* Peripheral clock gating register 2 */
+
+/******************************************************************************
+ * Timer 2 Register
+ *****************************************************************************/
+
+#define TIM2_CR1   *(volatile unsigned char*) 0x5300 /* TIM2 control register 1 */
+#define TIM2_IER   *(volatile unsigned char*) 0x5303 /* TIM2 interrupt enable register */
+#define TIM2_SR1   *(volatile unsigned char*) 0x5304 /* TIM2 status register 1 */
+#define TIM2_SR2   *(volatile unsigned char*) 0x5305 /* TIM2 status register 2 */
+#define TIM2_EGR   *(volatile unsigned char*) 0x5306 /* TIM2 event generation register */
+#define TIM2_CCMR1 *(volatile unsigned char*) 0x5307 /* TIM2 capture/compare mode register 1 */
+#define TIM2_CCMR2 *(volatile unsigned char*) 0x5308 /* TIM2 capture/compare mode register 2 */
+#define TIM2_CCMR3 *(volatile unsigned char*) 0x5309 /* TIM2 capture/compare mode register 3 */
+#define TIM2_CCER1 *(volatile unsigned char*) 0x530A /* TIM2 capture/compare enable register 1 */
+#define TIM2_CCER2 *(volatile unsigned char*) 0x530B /* TIM2 capture/compare enable register 2 */
+#define TIM2_CNTRH *(volatile unsigned char*) 0x530C /* TIM2 counter high */
+#define TIM2_CNTRL *(volatile unsigned char*) 0x530D /* TIM2 counter low */
+#define TIM2_PSCR  *(volatile unsigned char*) 0x530E /* TIM2 prescaler register */
+#define TIM2_ARRH  *(volatile unsigned char*) 0x530F /* TIM2 auto-reload register high 0xFF */
+#define TIM2_ARRL  *(volatile unsigned char*) 0x5310 /* TIM2 auto-reload register low 0xFF */
+#define TIM2_CCR1H *(volatile unsigned char*) 0x5311 /* TIM2 capture/compare register 1 high */
+#define TIM2_CCR1L *(volatile unsigned char*) 0x5312 /* TIM2 capture/compare register 1 low */
+#define TIM2_CCR2H *(volatile unsigned char*) 0x5313 /* TIM2 capture/compare reg. 2 high */
+#define TIM2_CCR2L *(volatile unsigned char*) 0x5314 /* TIM2 capture/compare register 2 low */
+#define TIM2_CCR3H *(volatile unsigned char*) 0x5315 /* TIM2 capture/compare register 3 high */
+#define TIM2_CCR3L *(volatile unsigned char*) 0x5316 /* TIM2 capture/compare register 3 low */
+
 #endif

@@ -13,10 +13,15 @@ DEBUGGER = stlinkv2
 FLASH_TARGET = stm8s003?3
 
 
-.PHONY: all
-all:
+.PHONY: blink
+blink:
 	mkdir -p $(BUILD_FOLDER)
 	sdcc stm8S003_flash_example.c $(LIBRARY) $(COMPILER_TARGET) $(OUTPUT_FORMAT) -o$(BUILD_FOLDER)out.ihx
+
+.PHONY: tim2
+tim2:
+	mkdir -p $(BUILD_FOLDER)
+	sdcc stm8S003_tim2_interrupt_example.c $(LIBRARY) $(COMPILER_TARGET) $(OUTPUT_FORMAT) -o$(BUILD_FOLDER)out.ihx
 
 .PHONY: burn
 burn:
