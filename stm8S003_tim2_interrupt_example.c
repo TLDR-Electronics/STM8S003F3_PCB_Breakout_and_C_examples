@@ -1,8 +1,7 @@
 /******************************************************************************
 * @file    stm8S003_tim2_interrupt_example.c
 * @author  Daniel Wood - github.com/aardwolfDigital
-* @brief   This file contains all the functions for the TIM2 peripheral.
-*          Timer 2 interrupt example for the STM8S003F3. Using the SDCC,
+* @brief   Timer 2 interrupt example for the STM8S003F3. Using the SDCC,
 *          or the IAR compiler. Self contained within one C file.
 *        
 *          Timer 2 overflow interval = 0.5 Seconds.
