@@ -140,7 +140,7 @@ void main ()
    *  fOUT = fOSC / ( PSCR * ARR )
    * 
    *  Where:
-   *  - tOUT = Period (Seconds)
+   *  - fOUT = Overflow Frequency (Hz)
    *  - fOSC = Clock Frequency (Hz)
    *  - PSCR = Timer 2 Prescale Value
    *  - ARR  = Auto-reload register 
