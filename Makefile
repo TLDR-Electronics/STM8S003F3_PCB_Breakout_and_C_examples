@@ -23,6 +23,11 @@ tim2:
 	mkdir -p $(BUILD_FOLDER)
 	sdcc stm8S003_tim2_interrupt_example.c $(LIBRARY) $(COMPILER_TARGET) $(OUTPUT_FORMAT) -o$(BUILD_FOLDER)out.ihx
 
+.PHONY: t2delay
+t2delay:
+	mkdir -p $(BUILD_FOLDER)
+	sdcc stm8S003_tim2_delay_example.c $(LIBRARY) $(COMPILER_TARGET) $(OUTPUT_FORMAT) -o$(BUILD_FOLDER)out.ihx
+
 .PHONY: burn
 burn:
 	$(STM8FLASH_FOLDER)stm8flash -c $(DEBUGGER) -p $(FLASH_TARGET) -w $(BUILD_FOLDER)out.ihx

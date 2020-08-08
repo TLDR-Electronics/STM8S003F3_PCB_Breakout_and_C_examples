@@ -1,4 +1,10 @@
 /******************************************************************************
+* @file    stm8S003_tim2_flash_example.c
+* @author  Daniel Wood - github.com/aardwolfDigital
+* @brief   Test program that flashes an LED to get started with the STM8S
+*          with the SDCC compiler
+*
+/******************************************************************************
 * The MIT License (MIT)
 * Copyright (c) 2020 Daniel Wood - Aardwolf Digital
 *  Permission is hereby granted, free of charge, to any person obtaining a

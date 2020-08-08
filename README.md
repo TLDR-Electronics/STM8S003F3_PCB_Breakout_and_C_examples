@@ -1,5 +1,6 @@
 # STM8S003F3 SDCC example
 Lightweight C example of the STM8S003F3 using the Small Device C Compiler (SDCC) without the need for the STM8S/A Standard peripheral library.
+Some examples are also compatable with the IAR compiler.
 
 ## Setup
 To compile and run this SDCC will need to be installed.
@@ -15,8 +16,9 @@ This will need to be compiled. The directory for the executable was placed in:
 
 Typing in the following commands in the development folder:
 - `make blink` will compile the blink program to the *./bin/* folder.
-- `make tim2` will compile the timer2 program to the *./bin/* folder
-- `make burn` command will flash the device depending on the last build
-- `make clean` will clear the binary and the *./bin/* folder
+- `make tim2` will compile the timer2 interrupt program to the *./bin/* folder.
+- `make t2delay` will compile the timer2 delay program to the *./bin/* folder.
+- `make burn` command will flash the device depending on the last build.
+- `make clean` will clear the binary and the *./bin/* folder.
 
-depending on your flash device, the makefile may need to be edited.
+Depending on your programmer, the makefile may need to be edited.
