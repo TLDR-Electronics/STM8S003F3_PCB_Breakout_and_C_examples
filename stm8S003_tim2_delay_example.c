@@ -85,7 +85,8 @@ void DelayMs(const uint16_t preload_value)
   TIM2_ARRL = arrl;       /* Set Low Auto-Reload Value */
   TIM2_SR1 &= 0;          /* Reset the Update Interrupt Flag (UIF) */
   TIM2_CR1  = 1;          /* Enable Counter enable bit (CEN) */
-  while((TIM2_SR1 & 0x01) == 0) 
+  
+  while((TIM2_SR1 & 0x01) == 0) /* Wait for Update Interrupt Flag to set */ 
   {
   }
   
@@ -104,7 +105,7 @@ void DelayUs(const uint16_t preload_value)
   TIM2_SR1 &= 0;          /* Reset the Update Interrupt Flag (UIF) */
   TIM2_CR1  = 1;          /* Enable Counter enable bit (CEN) */
 
-  while((TIM2_SR1 & 0x01) == 0) 
+  while((TIM2_SR1 & 0x01) == 0) /* Wait for Update Interrupt Flag to set */
   {
   }
 
