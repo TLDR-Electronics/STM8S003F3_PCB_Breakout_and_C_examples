@@ -1,0 +1,11 @@
+Designator,Quantity,Value,Footprint,LCSC Part #
+"C1, C3, C5, ",3,100n,Capacitor_SMD:C_0402_1005Metric,C1525
+"C2, ",1,100n,Capacitor_SMD:C_0603_1608Metric,C14663
+"C4, ",1,1u,Capacitor_SMD:C_0402_1005Metric,C52923
+"D1, ",1,LED,LED_SMD:LED_0603_1608Metric,C2286
+D2,1,LED,LED_SMD:LED_0603_1608Metric,C72038
+"R1, R2, ",2,1k,Resistor_SMD:R_0402_1005Metric,C11702
+"R3, ",1,10k,Resistor_SMD:R_0402_1005Metric,C25744
+"SW1, ",1,SW_Push,Button_Switch_SMD:SW_SPST_CK_RS282G05A3,C118141
+"U1, ",1,STM8S003F3P,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,C52717
+"U2, ",1,AMS1117-3.3,Package_TO_SOT_SMD:SOT-223-3_TabPin2,C6186
