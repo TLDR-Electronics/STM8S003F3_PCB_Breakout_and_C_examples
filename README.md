@@ -2,6 +2,8 @@
 Breakout board and some lightweight C examples of the STM8S003F3 using the Small Device C Compiler (SDCC). Without the need for the STM8S/A Standard peripheral library.
 Some examples are also compatable with the IAR compiler.
 
+![Breakout Boards](https://user-images.githubusercontent.com/19818741/90937693-3b57d900-e3ff-11ea-88cc-298ae4a1f2fe.jpg)
+
 Gerbers and design files for low cost breakout boards for the STM8S003F3 are available in the hardware folder.
 The breakout boards are designed in EasyEDA and KiCAD are placed in the hardware folder. 
 The EasyEDA gerbers and assembly files have been phyically tested with JLCPCB. KiCAD files have not been tested.
