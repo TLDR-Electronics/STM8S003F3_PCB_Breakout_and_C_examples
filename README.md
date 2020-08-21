@@ -1,4 +1,4 @@
-# STM8S003F3 example
+# STM8S003F3 PCB Breakout and C examples
 Breakout board and some lightweight C examples of the STM8S003F3 using the Small Device C Compiler (SDCC). Without the need for the STM8S/A Standard peripheral library.
 Some examples are also compatable with the IAR compiler.
 
